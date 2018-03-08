@@ -36,11 +36,13 @@ function setupSquares() {
 			var clickedColor = this.style.backgroundColor;
 
 			if(clickedColor === pickedColor) {
+				messageDisplay.classList.add("green");
 				messageDisplay.textContent = "Correct!";
 				changeColors(clickedColor);
 				h1.style.backgroundColor = clickedColor;
 				resetButton.textContent = "Play again?";
 			} else {
+				messageDisplay.classList.remove("green");
 				this.style.backgroundColor = "#232323";
 				messageDisplay.textContent = "Try Again";
 			}
@@ -65,7 +67,7 @@ function reset() {
 			squares[i].style.display = "none";
 		}
 	}
-	h1.style.backgroundColor = "steelblue";
+	h1.style.backgroundColor = "#5bc0de";
 }
 
 resetButton.addEventListener("click", function() {
