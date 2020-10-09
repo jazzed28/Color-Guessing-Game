@@ -5,5 +5,5 @@ Guess a picked colour between 3 or 6 colors
 
 Easy and Hard modes
 
-HTML, CSS, jQuery
+HTML, CSS, Bootstrap
 
